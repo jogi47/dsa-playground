@@ -99,13 +99,13 @@ console.log("quickSort([]):", quickSort([]));
 // []
 
 console.log("\nIn-place version (Lomuto):");
-const arr1 = [10, 7, 8, 9, 1, 5];
-quickSortInPlace(arr1);
-console.log("After sorting [10, 7, 8, 9, 1, 5]:", arr1);
+const lomutoArr = [10, 7, 8, 9, 1, 5];
+quickSortInPlace(lomutoArr);
+console.log("After sorting [10, 7, 8, 9, 1, 5]:", lomutoArr);
 // [1, 5, 7, 8, 9, 10]
 
 console.log("\nIn-place version (Hoare):");
-const arr2 = [64, 34, 25, 12, 22, 11, 90];
-quickSortHoare(arr2);
-console.log("After sorting [64, 34, 25, 12, 22, 11, 90]:", arr2);
+const hoareArr = [64, 34, 25, 12, 22, 11, 90];
+quickSortHoare(hoareArr);
+console.log("After sorting [64, 34, 25, 12, 22, 11, 90]:", hoareArr);
 // [11, 12, 22, 25, 34, 64, 90]

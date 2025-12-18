@@ -9,15 +9,18 @@
  */
 
 function longestConsecutive(nums: number[]): number {
+  // Set enables O(1) lookups and removes duplicates
   const numSet = new Set(nums);
   let longest = 0;
 
   for (const num of numSet) {
-    // Only start counting if num is the start of a sequence
+    // Key insight: only start from sequence beginnings (no left neighbor)
+    // This ensures each sequence is counted exactly once -> O(n) total
     if (!numSet.has(num - 1)) {
       let currentNum = num;
       let currentStreak = 1;
 
+      // Extend right as long as consecutive numbers exist
       while (numSet.has(currentNum + 1)) {
         currentNum++;
         currentStreak++;
