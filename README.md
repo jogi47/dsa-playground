@@ -290,7 +290,7 @@ npm install
 
 ```bash
 # Run any TypeScript file directly
-npx ts-node patterns/core/001-factory-method.ts
+npx ts-node patterns/core/01-factory-method.ts
 
 # Run a DSA problem
 npx ts-node problems/medium/001-group-anagrams.ts
