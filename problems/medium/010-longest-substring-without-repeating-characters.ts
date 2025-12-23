@@ -29,19 +29,35 @@
  */
 
 function lengthOfLongestSubstring(s: string): number {
+  // Map to store each character's most recent index in the string
   const charIndex = new Map<string, number>();
+
+  // Track the maximum length found so far
   let maxLength = 0;
+
+  // Left pointer of our sliding window
   let left = 0;
 
+  // Right pointer expands the window one character at a time
   for (let right = 0; right < s.length; right++) {
     const char = s[right];
 
-    // If char exists in window, move left pointer past the duplicate
+    // Check if this character was seen before AND is within our current window.
+    // The ">= left" check is crucial: it ensures we only care about duplicates
+    // that are inside our current window, not old ones we've already passed.
+    // Example: "abba" - when we reach the second 'a', the first 'a' at index 0
+    // is no longer in our window (left=2), so we shouldn't shrink further.
     if (charIndex.has(char) && charIndex.get(char)! >= left) {
+      // Move left pointer to one position after the duplicate.
+      // This "shrinks" the window to exclude the previous occurrence.
       left = charIndex.get(char)! + 1;
     }
 
+    // Record/update this character's position
     charIndex.set(char, right);
+
+    // Calculate current window size and update max if larger.
+    // Window size = right - left + 1 (inclusive on both ends)
     maxLength = Math.max(maxLength, right - left + 1);
   }
 
