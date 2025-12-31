@@ -5,7 +5,7 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-3178C6?style=flat-square&logo=typescript&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Patterns](https://img.shields.io/badge/Patterns-112-purple?style=flat-square)
-![Problems](https://img.shields.io/badge/Problems-26-orange?style=flat-square)
+![Problems](https://img.shields.io/badge/Problems-45-orange?style=flat-square)
 
 ---
 
@@ -14,8 +14,8 @@
 | Category | Count | Description |
 |----------|-------|-------------|
 | 🏗️ **Design Patterns** | 112 | Core GoF + PoEAA + DDD + Refactoring patterns |
-| 🧩 **DSA Problems** | 26 | Data structures, algorithms, and LeetCode-style problems |
-| 📐 **System Design** | 7 | Real-world system architecture documents |
+| 🧩 **DSA Problems** | 45 | Data structures, algorithms, and LeetCode-style problems |
+| 📐 **System Design** | 16 | Real-world system architecture documents |
 | 📘 **TypeScript** | Strict | Full type safety with comprehensive documentation |
 
 ---
@@ -344,7 +344,7 @@ Refactoring patterns from Martin Fowler's "Refactoring: Improving the Design of 
 ### Problems by Difficulty
 
 <details>
-<summary><b>🟢 Easy (4 problems)</b></summary>
+<summary><b>🟢 Easy (7 problems)</b></summary>
 
 | Problem | Technique |
 |---------|-----------|
@@ -352,11 +352,14 @@ Refactoring patterns from Martin Fowler's "Refactoring: Improving the Design of 
 | Contains Duplicate | Set |
 | Valid Anagram | Character Count |
 | Valid Palindrome | Two Pointers |
+| Best Time to Buy and Sell Stock | Single Pass (Greedy) |
+| Valid Parentheses | Stack |
+| Binary Search | Binary Search |
 
 </details>
 
 <details>
-<summary><b>🟡 Medium (9 problems)</b></summary>
+<summary><b>🟡 Medium (21 problems)</b></summary>
 
 | Problem | Technique |
 |---------|-----------|
@@ -369,15 +372,31 @@ Refactoring patterns from Martin Fowler's "Refactoring: Improving the Design of 
 | Two Sum II | Two Pointers |
 | Three Sum | Two Pointers |
 | Container with Most Water | Two Pointers |
+| Longest Substring Without Repeating Characters | Sliding Window |
+| Longest Repeating Character Replacement | Sliding Window |
+| Permutation in String | Sliding Window |
+| Min Stack | Two-Stack Approach |
+| Evaluate Reverse Polish Notation | Stack |
+| Daily Temperatures | Monotonic Stack |
+| Car Fleet | Sorting + Stack |
+| Search a 2D Matrix | Binary Search |
+| Koko Eating Bananas | Binary Search on Answer |
+| Find Minimum in Rotated Sorted Array | Binary Search |
+| Search in Rotated Sorted Array | Binary Search |
+| Time-Based Key-Value Store | HashMap + Binary Search |
 
 </details>
 
 <details>
-<summary><b>🔴 Hard (1 problem)</b></summary>
+<summary><b>🔴 Hard (5 problems)</b></summary>
 
 | Problem | Technique |
 |---------|-----------|
 | Trapping Rain Water | Two Pointers / Stack |
+| Minimum Window Substring | Sliding Window |
+| Sliding Window Maximum | Monotonic Deque |
+| Largest Rectangle in Histogram | Monotonic Stack |
+| Median of Two Sorted Arrays | Binary Search |
 
 </details>
 
@@ -396,6 +415,15 @@ Comprehensive system design documents for real-world applications:
 | 5 | **Codeforces Clone** | Competitive programming platform |
 | 6 | **Replit Clone** | Online IDE and development environment |
 | 7 | **Cloudflare Workers Runtime** | Edge computing runtime |
+| 8 | **Agent Framework** | AI agent architecture |
+| 9 | **RL Finetuning** | Reinforcement learning finetuning system |
+| 10 | **Devin** | AI software engineer platform |
+| 11 | **Memory Framework** | Memory management for AI systems |
+| 12 | **DEX AMM** | Decentralized exchange with AMM |
+| 13 | **CEX** | Centralized exchange architecture |
+| 14 | **Wallet** | Cryptocurrency wallet system |
+| 15 | **Prediction Market** | Prediction market platform |
+| 16 | **Staking Escrow Frontend** | Staking and escrow frontend |
 
 ---
 

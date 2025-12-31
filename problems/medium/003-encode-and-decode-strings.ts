@@ -7,21 +7,62 @@
  *
  * Implement encode and decode methods.
  *
- * Strategy: Length-Prefix Encoding
- * --------------------------------
- * Format: "length#string"
+ * Example 1:
+ * Input: ["lint","code","love","you"]
+ * Output: ["lint","code","love","you"]
+ * Explanation: Encode to "4#lint4#code4#love3#you", then decode back.
  *
- * Why this works:
- * - By prefixing each string with its length, we always know exactly
- *   how many characters to read after the '#' delimiter
- * - This handles strings containing '#' or any special character
+ * Example 2:
+ * Input: ["we","say",":","yes"]
+ * Output: ["we","say",":","yes"]
+ * Explanation: Works with special characters.
  *
- * Example: ["hello", "world"] → "5#hello5#world"
- *
- * Time Complexity: O(n) where n = total characters across all strings
- * Space Complexity: O(n) for the encoded/decoded result
+ * Constraints:
+ * - 0 <= strs.length <= 200
+ * - 0 <= strs[i].length <= 200
+ * - strs[i] contains any possible characters out of 256 valid ASCII characters.
  */
 
+/**
+ * Length-Prefix Encoding - O(n) time, O(n) space
+ * where n = total characters across all strings
+ *
+ * Key insight: By prefixing each string with its length, we always know
+ * exactly how many characters to read after the delimiter. This handles
+ * strings containing any character, including the delimiter itself.
+ *
+ * Format: "length#string"
+ *
+ * Algorithm (Encode):
+ * 1. For each string, append: length + "#" + string
+ * 2. Concatenate all encoded strings
+ *
+ * Algorithm (Decode):
+ * 1. Find the '#' delimiter to get the length
+ * 2. Read exactly 'length' characters after '#'
+ * 3. Move pointer and repeat until end
+ *
+ * Example walkthrough with ["hello", "world"]:
+ *   Encode:
+ *     "hello" (len=5) → "5#hello"
+ *     "world" (len=5) → "5#world"
+ *     Result: "5#hello5#world"
+ *
+ *   Decode "5#hello5#world":
+ *     i=0: find '#' at j=1, length=5, extract "hello", i=7
+ *     i=7: find '#' at j=8, length=5, extract "world", i=14
+ *     Result: ["hello", "world"]
+ *
+ * Why length-prefix works:
+ * - Problem: How to split "a#b#c" if strings contain '#'?
+ * - Solution: "3#a#b1#c" → read 3 chars after first # → "a#b", then 1 char → "c"
+ * - The length tells us EXACTLY where each string ends
+ *
+ * Alternative approaches:
+ * - Escape characters: Replace '#' with '##', use '#' as delimiter → complex
+ * - Non-printable delimiter: Use '\0' or similar → fails if string contains it
+ * - Length-prefix: Simple and handles ALL characters → best approach
+ */
 function encode(strs: string[]): string {
   let encoded = "";
 

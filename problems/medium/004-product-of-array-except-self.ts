@@ -6,9 +6,67 @@
  * is equal to the product of all the elements of nums except nums[i].
  *
  * The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+ *
  * You must write an algorithm that runs in O(n) time and without using the division operation.
+ *
+ * Example 1:
+ * Input: nums = [1,2,3,4]
+ * Output: [24,12,8,6]
+ *
+ * Example 2:
+ * Input: nums = [-1,1,0,-3,3]
+ * Output: [0,0,9,0,0]
+ *
+ * Constraints:
+ * - 2 <= nums.length <= 10^5
+ * - -30 <= nums[i] <= 30
+ * - The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
+ *
+ * Follow up: Can you solve the problem in O(1) extra space complexity?
+ * (The output array does not count as extra space for space complexity analysis.)
  */
 
+/**
+ * Two-Pass Prefix/Suffix Products - O(n) time, O(1) extra space
+ *
+ * Key insight: For each position i, we need:
+ *   result[i] = (product of all elements LEFT of i) × (product of all elements RIGHT of i)
+ *
+ * We can compute this in two passes without division:
+ * - Pass 1 (left→right): Store prefix products (product of all elements before i)
+ * - Pass 2 (right→left): Multiply by suffix products (product of all elements after i)
+ *
+ * Algorithm:
+ * 1. Initialize result array with 1s
+ * 2. Pass 1 (prefix): For each i, result[i] = product of nums[0..i-1]
+ * 3. Pass 2 (suffix): For each i, result[i] *= product of nums[i+1..n-1]
+ *
+ * Why no division?
+ * - Division approach: total_product / nums[i] - fails when nums[i] = 0
+ * - Prefix/suffix approach: works with any values including zeros
+ *
+ * Example walkthrough with nums = [1, 2, 3, 4]:
+ *
+ *   Pass 1 - Prefix products (left to right):
+ *     i=0: result[0] = 1 (nothing to left), leftProduct = 1
+ *     i=1: result[1] = 1 (prefix = 1), leftProduct = 1*1 = 1
+ *     i=2: result[2] = 2 (prefix = 1*2), leftProduct = 1*2 = 2
+ *     i=3: result[3] = 6 (prefix = 1*2*3), leftProduct = 2*3 = 6
+ *     After pass 1: result = [1, 1, 2, 6]
+ *
+ *   Pass 2 - Multiply by suffix products (right to left):
+ *     i=3: result[3] = 6 * 1 = 6, rightProduct = 1*4 = 4
+ *     i=2: result[2] = 2 * 4 = 8, rightProduct = 4*3 = 12
+ *     i=1: result[1] = 1 * 12 = 12, rightProduct = 12*2 = 24
+ *     i=0: result[0] = 1 * 24 = 24, rightProduct = 24*1 = 24
+ *     After pass 2: result = [24, 12, 8, 6]
+ *
+ *   Verification:
+ *     result[0] = 2*3*4 = 24 ✓
+ *     result[1] = 1*3*4 = 12 ✓
+ *     result[2] = 1*2*4 = 8 ✓
+ *     result[3] = 1*2*3 = 6 ✓
+ */
 function productExceptSelf(nums: number[]): number[] {
   const n = nums.length;
   // Initialize result array with 1s (neutral element for multiplication)
