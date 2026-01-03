@@ -6,7 +6,8 @@
     "core": "ts-node problems/core/",
     "easy": "ts-node problems/easy/",
     "medium": "ts-node problems/medium/",
-    "hard": "ts-node problems/hard/"
+    "hard": "ts-node problems/hard/",
+    "pract": "ts-node practice/practice.ts"
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
