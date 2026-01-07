@@ -118,3 +118,5 @@ list.remove(1);
 console.log("remove(1):", list.getValues()); // [0, 2]
 
 console.log("get(1):", list.get(1)); // 2
+
+export {};
