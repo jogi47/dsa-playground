@@ -99,3 +99,5 @@ console.log(groupAnagrams([""]));
 console.log("\ngroupAnagrams(['a']):");
 console.log(groupAnagrams(["a"]));
 // [["a"]]
+
+export {}

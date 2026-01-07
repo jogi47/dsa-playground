@@ -78,3 +78,5 @@ console.log(checkInclusion("adc", "dcda"));     // Expected: true
 console.log(checkInclusion("a", "a"));          // Expected: true
 console.log(checkInclusion("ab", "a"));         // Expected: false
 console.log(checkInclusion("abc", "bbbca"));    // Expected: true
+
+export {}

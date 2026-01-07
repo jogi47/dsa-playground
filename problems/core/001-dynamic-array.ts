@@ -97,3 +97,5 @@ console.log("get(1):", arr3.get(1));             // 3
 console.log("popback:", arr3.popback());         // 3
 console.log("getSize:", arr3.getSize());         // 1
 console.log("getCapacity:", arr3.getCapacity()); // 2
+
+export {}

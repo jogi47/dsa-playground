@@ -127,3 +127,5 @@ console.log(dailyTemperatures([75, 70]));
 // Test case 9: Valley pattern
 console.log(dailyTemperatures([80, 60, 40, 60, 80]));
 // Expected: [0, 2, 1, 1, 0]
+
+export {}

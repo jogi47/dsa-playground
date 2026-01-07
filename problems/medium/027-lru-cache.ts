@@ -223,3 +223,5 @@ console.log("get(1):", cache2.get(1)); // 10
 cache2.put(3, 3); // should evict 2 (not 1, since 1 was just accessed)
 console.log("get(2):", cache2.get(2)); // -1
 console.log("get(3):", cache2.get(3)); // 3
+
+export {}

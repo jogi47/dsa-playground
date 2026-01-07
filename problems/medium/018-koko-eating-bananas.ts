@@ -126,3 +126,5 @@ console.log(minEatingSpeed([1, 1, 1, 1], 8)); // Expected: 1
 
 // Test case 10: Exactly h = n
 console.log(minEatingSpeed([2, 2], 2)); // Expected: 2
+
+export {}

@@ -61,3 +61,5 @@ console.log(characterReplacement("AABABBA", 1));  // Expected: 4
 console.log(characterReplacement("AAAA", 2));     // Expected: 4
 console.log(characterReplacement("ABCD", 2));     // Expected: 3
 console.log(characterReplacement("ABBB", 2));     // Expected: 4
+
+export {}

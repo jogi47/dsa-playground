@@ -148,3 +148,5 @@ console.log(searchRotated([6, 7, 1, 2, 3, 4, 5], 1)); // Expected: 2
 
 // Test case 12: Larger array
 console.log(searchRotated([8, 9, 10, 1, 2, 3, 4, 5, 6, 7], 6)); // Expected: 8
+
+export {}

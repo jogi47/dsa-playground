@@ -115,3 +115,5 @@ console.log(search([2, 4, 6, 8], 10)); // Expected: -1
 
 // Test case 11: Negative numbers
 console.log(search([-10, -5, 0, 5, 10], -5)); // Expected: 1
+
+export {}

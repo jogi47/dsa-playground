@@ -151,3 +151,5 @@ console.log(minStack5.getMin()); // Expected: -3
 minStack5.pop();
 minStack5.pop();
 console.log(minStack5.getMin()); // Expected: -1
+
+export {}

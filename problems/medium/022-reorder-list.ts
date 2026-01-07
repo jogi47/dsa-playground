@@ -157,3 +157,5 @@ console.log(linkedListToArray(list5)); // [1,3,2]
 let list6 = createLinkedList([1, 2, 3, 4, 5, 6, 7, 8]);
 reorderList(list6);
 console.log(linkedListToArray(list6)); // [1,8,2,7,3,6,4,5]
+
+export {}

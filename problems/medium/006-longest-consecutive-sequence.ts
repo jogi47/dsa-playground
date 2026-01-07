@@ -106,3 +106,5 @@ console.log("longestConsecutive([100,4,200,1,3,2]):", longestConsecutive([100, 4
 console.log("longestConsecutive([0,3,7,2,5,8,4,6,0,1]):", longestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1])); // 9 (sequence: 0-8)
 console.log("longestConsecutive([]):", longestConsecutive([])); // 0
 console.log("longestConsecutive([1]):", longestConsecutive([1])); // 1
+
+export {}

@@ -99,3 +99,5 @@ uf.union(7, 8);
 console.log("\nAfter more unions:");
 console.log("connected(4, 9):", uf.connected(4, 9)); // true (4-5-6-7-8-9)
 console.log("Number of sets:", uf.getCount()); // 2
+
+export {}

@@ -120,3 +120,5 @@ console.log("============================\n");
 console.log("productExceptSelf([1,2,3,4]):", productExceptSelf([1, 2, 3, 4])); // [24,12,8,6]
 console.log("productExceptSelf([-1,1,0,-3,3]):", productExceptSelf([-1, 1, 0, -3, 3])); // [0,0,9,0,0]
 console.log("productExceptSelf([2,3]):", productExceptSelf([2, 3])); // [3,2]
+
+export {}

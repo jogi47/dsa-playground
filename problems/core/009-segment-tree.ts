@@ -127,3 +127,5 @@ console.log("query(0, 5):", st.query(0, 5)); // 1+3+5+10+9+11 = 39
 console.log("\nUpdate index 0 to 5:");
 st.update(0, 5);
 console.log("query(0, 2):", st.query(0, 2)); // 5+3+5 = 13
+
+export {}

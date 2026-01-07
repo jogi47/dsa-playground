@@ -105,3 +105,5 @@ console.log(maxArea([5, 5, 5, 5])); // Expected: 15
 
 // Test case 6: Large difference in heights
 console.log(maxArea([1, 2, 1])); // Expected: 2
+
+export {}

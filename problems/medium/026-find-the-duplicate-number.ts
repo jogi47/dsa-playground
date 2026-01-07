@@ -159,3 +159,5 @@ console.log(findDuplicate([1, 2, 1, 3, 4])); // 1
 console.log("\n--- Binary Search Approach ---");
 console.log(findDuplicateBinarySearch([1, 3, 4, 2, 2])); // 2
 console.log(findDuplicateBinarySearch([3, 1, 3, 4, 2])); // 3
+
+export {}

@@ -79,3 +79,5 @@ const testArr = [5, 2, 4, 6, 1, 3];
 insertionSortInPlace(testArr);
 console.log("After sorting [5, 2, 4, 6, 1, 3]:", testArr);
 // [1, 2, 3, 4, 5, 6]
+
+export {}

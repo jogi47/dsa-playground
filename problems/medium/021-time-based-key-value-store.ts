@@ -172,3 +172,5 @@ timeMap6.set("x", "first", 100);
 timeMap6.set("x", "second", 200);
 console.log(timeMap6.get("x", 100)); // Expected: "first"
 console.log(timeMap6.get("x", 200)); // Expected: "second"
+
+export {}

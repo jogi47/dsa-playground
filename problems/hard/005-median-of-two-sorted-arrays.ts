@@ -165,3 +165,5 @@ console.log(findMedianSortedArrays([1], [2, 3, 4, 5, 6, 7])); // Expected: 4.0
 // Test case 12: Both arrays same
 console.log(findMedianSortedArrays([1, 2, 3], [1, 2, 3])); // Expected: 2.0
 // Merged: [1,1,2,2,3,3] -> median = (2+2)/2 = 2.0
+
+export {}

@@ -69,3 +69,5 @@ console.log(maxSlidingWindow([1, -1], 1));                    // Expected: [1,-1
 console.log(maxSlidingWindow([9, 11], 2));                    // Expected: [11]
 console.log(maxSlidingWindow([4, -2], 2));                    // Expected: [4]
 console.log(maxSlidingWindow([1, 3, 1, 2, 0, 5], 3));         // Expected: [3,3,2,5]
+
+export {}

@@ -144,3 +144,5 @@ console.log(evalRPN(["42"])); // Expected: 42
 // Test case 9: Multiple operations
 console.log(evalRPN(["3", "4", "+", "2", "*", "7", "/"])); // Expected: 2
 // Explanation: ((3+4)*2)/7 = 14/7 = 2
+
+export {}

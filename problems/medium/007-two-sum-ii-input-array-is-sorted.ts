@@ -99,3 +99,5 @@ console.log(twoSumII([1, 2, 3, 4, 4, 9, 56, 90], 8)); // Expected: [4, 5]
 
 // Test case 5: All same numbers
 console.log(twoSumII([1, 1, 1, 1], 2)); // Expected: [1, 2]
+
+export {}

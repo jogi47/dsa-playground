@@ -49,3 +49,5 @@ console.log(maxProfit([7, 6, 4, 3, 1]));    // Expected: 0
 console.log(maxProfit([1, 2]));             // Expected: 1
 console.log(maxProfit([2, 4, 1]));          // Expected: 2
 console.log(maxProfit([3, 2, 6, 5, 0, 3])); // Expected: 4
+
+export {}

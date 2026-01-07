@@ -187,3 +187,5 @@ console.log("Decoded:", decode(encode(test5)));
 // Decoded: [ 'a#b', 'c##d' ]
 // Note: Works because we read exactly 3 chars after first '#' → "a#b"
 //       and exactly 4 chars after second '#' → "c##d"
+
+export {}

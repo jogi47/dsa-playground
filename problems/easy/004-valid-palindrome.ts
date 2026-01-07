@@ -106,3 +106,5 @@ console.log(isPalindrome(".,")); // Expected: true
 
 // Test case 6: Numbers included
 console.log(isPalindrome("0P")); // Expected: false
+
+export {}

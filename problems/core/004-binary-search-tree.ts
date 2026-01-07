@@ -141,3 +141,5 @@ console.log("getMax:", bst.getMax()); // 7
 
 bst.remove(3);
 console.log("After remove(3):", bst.inorder()); // [1, 4, 5, 7]
+
+export {}

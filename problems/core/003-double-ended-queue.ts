@@ -125,3 +125,5 @@ console.log("After pops:", deque.getValues()); // [1]
 console.log("isEmpty:", deque.isEmpty()); // false
 deque.popFront();
 console.log("isEmpty:", deque.isEmpty()); // true
+
+export {}

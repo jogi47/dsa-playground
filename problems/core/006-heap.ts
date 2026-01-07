@@ -123,3 +123,5 @@ console.log("Pop all:");
 while (!heap2.isEmpty()) {
   console.log("pop:", heap2.pop()); // 1, 3, 4, 5, 10
 }
+
+export {}

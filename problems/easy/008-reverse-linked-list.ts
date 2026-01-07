@@ -162,3 +162,5 @@ console.log("\n--- Recursive Approach ---");
 // Test recursive approach
 console.log(linkedListToArray(reverseListRecursive(createLinkedList([1, 2, 3, 4, 5])))); // [5,4,3,2,1]
 console.log(linkedListToArray(reverseListRecursive(createLinkedList([1, 2])))); // [2,1]
+
+export {}

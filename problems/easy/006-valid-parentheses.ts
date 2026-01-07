@@ -119,3 +119,5 @@ console.log(isValid("[")); // Expected: false
 
 // Test case 10: Empty string edge case (if allowed)
 console.log(isValid("")); // Expected: true
+
+export {}

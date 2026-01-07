@@ -140,3 +140,5 @@ console.log(largestRectangleArea([1, 5, 5, 5, 1])); // Expected: 15
 // Test case 11: Classic trapping-like pattern
 console.log(largestRectangleArea([6, 2, 5, 4, 5, 1, 6])); // Expected: 12
 // Height 4 spanning indices 2,3,4 -> 4*3=12
+
+export {}

@@ -135,3 +135,5 @@ console.log(findMin([6, 7, 8, 9, 10, 1, 2, 3, 4, 5])); // Expected: 1
 
 // Test case 11: Negative numbers
 console.log(findMin([1, 2, -5, -4, -3])); // Expected: -5
+
+export {}

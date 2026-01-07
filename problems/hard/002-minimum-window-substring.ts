@@ -87,3 +87,5 @@ console.log(minWindow("a", "aa"));              // Expected: ""
 console.log(minWindow("aa", "aa"));             // Expected: "aa"
 console.log(minWindow("cabwefgewcwaefgcf", "cae")); // Expected: "cwae"
 console.log(minWindow("bba", "ab"));            // Expected: "ba"
+
+export {}

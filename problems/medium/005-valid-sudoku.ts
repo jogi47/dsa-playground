@@ -160,3 +160,5 @@ const invalidBoard = [
 ];
 
 console.log("Invalid board (duplicate 8 in column):", isValidSudoku(invalidBoard)); // false
+
+export {}

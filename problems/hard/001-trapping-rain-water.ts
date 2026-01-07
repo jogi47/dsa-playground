@@ -140,3 +140,5 @@ console.log(trap([2, 5])); // Expected: 0
 
 // Test case 8: Flat surface
 console.log(trap([3, 3, 3, 3])); // Expected: 0
+
+export {}

@@ -153,3 +153,5 @@ console.log("\nhasPath(1, 5):", graph.hasPath(1, 5)); // true
 graph.removeEdge(4, 5);
 console.log("After removeEdge(4, 5):");
 console.log("hasPath(1, 5):", graph.hasPath(1, 5)); // false
+
+export {}

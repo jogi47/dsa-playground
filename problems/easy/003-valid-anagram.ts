@@ -37,3 +37,5 @@ console.log("isAnagram('rat', 'car'):", isAnagram("rat", "car")); // false
 console.log("isAnagram('listen', 'silent'):", isAnagram("listen", "silent")); // true
 console.log("isAnagram('hello', 'world'):", isAnagram("hello", "world")); // false
 console.log("isAnagram('', ''):", isAnagram("", "")); // true
+
+export {}

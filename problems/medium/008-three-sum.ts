@@ -138,3 +138,5 @@ console.log(threeSum([-1, 1, 1, 1]));
 // Test case 5: Larger array with multiple triplets
 console.log(threeSum([-2, 0, 0, 2, 2]));
 // Expected: [[-2,0,2]]
+
+export {}

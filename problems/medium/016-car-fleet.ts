@@ -149,3 +149,5 @@ console.log(carFleet(10, [0, 2, 5, 7], [1, 2, 1, 1])); // Expected: 3
 // Car at 5: 5.0 hours -> new fleet
 // Car at 2: 4.0 hours -> catches up to 5's fleet
 // Car at 0: 10.0 hours -> new fleet
+
+export {}

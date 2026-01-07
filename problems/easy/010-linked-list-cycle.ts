@@ -165,3 +165,5 @@ console.log(hasCycle(createLinkedListWithCycle([1, 2, 3, 4], 3))); // true (4 ->
 console.log("\n--- Hash Set Approach ---");
 console.log(hasCycleHashSet(createLinkedListWithCycle([3, 2, 0, -4], 1))); // true
 console.log(hasCycleHashSet(createLinkedListWithCycle([1], -1))); // false
+
+export {}

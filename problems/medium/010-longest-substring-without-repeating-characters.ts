@@ -74,3 +74,5 @@ console.log(lengthOfLongestSubstring(""));         // Expected: 0
 console.log(lengthOfLongestSubstring(" "));        // Expected: 1
 console.log(lengthOfLongestSubstring("dvdf"));     // Expected: 3
 console.log(lengthOfLongestSubstring("abba"));     // Expected: 2
+
+export {}

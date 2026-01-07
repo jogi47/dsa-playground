@@ -128,3 +128,5 @@ console.log("After put(1, 150), get(1):", ht.get(1)); // 150
 console.log("remove(1):", ht.remove(1)); // true
 console.log("get(1):", ht.get(1)); // -1
 console.log("size:", ht.getSize()); // 2
+
+export {}
