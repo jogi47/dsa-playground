@@ -4,7 +4,7 @@ This folder contains study material for the Claude Certified Architect Foundatio
 
 ## Current Coverage
 
-The current note set covers Domain 1 in full, the first five Domain 2 tool-integration notes, the opening six Domain 3 Claude Code workflow notes, the first six Domain 4 prompt-engineering and structured-output notes, and the opening four Domain 5 context-management, escalation, error-propagation, and large-codebase-exploration notes:
+The current note set covers Domain 1 in full, the first five Domain 2 tool-integration notes, the opening six Domain 3 Claude Code workflow notes, the first six Domain 4 prompt-engineering and structured-output notes, and Domain 5 in full:
 
 - [claude-certified-architect-foundations-certification-exam-guide.md](claude-certified-architect-foundations-certification-exam-guide.md) - Full study guide with domains, scenarios, sample questions, and preparation advice
 - [topic-1.1-design-and-implement-agentic-loops-for-autonomous-task-execution.md](topic-1.1-design-and-implement-agentic-loops-for-autonomous-task-execution.md) - Agent loop control, `stop_reason`, and tool-result feedback
@@ -35,6 +35,8 @@ The current note set covers Domain 1 in full, the first five Domain 2 tool-integ
 - [topic-5.2-design-effective-escalation-and-ambiguity-resolution-patterns.md](topic-5.2-design-effective-escalation-and-ambiguity-resolution-patterns.md) - Resolve versus clarify versus escalate boundaries, explicit human-request handling, policy-gap escalation, and current Anthropic clarification workflow terminology
 - [topic-5.3-implement-error-propagation-strategies-across-multi-agent-systems.md](topic-5.3-implement-error-propagation-strategies-across-multi-agent-systems.md) - Structured subagent failure propagation, partial-progress preservation, coordinator recovery logic, and current `Task` versus `Agent` terminology mapping
 - [topic-5.4-manage-context-effectively-in-large-codebase-exploration.md](topic-5.4-manage-context-effectively-in-large-codebase-exploration.md) - Scratchpads, subagent-scoped exploration, phase summaries, compaction timing, and structured resume manifests for long codebase investigations
+- [topic-5.5-design-human-review-workflows-and-confidence-calibration.md](topic-5.5-design-human-review-workflows-and-confidence-calibration.md) - Human review routing, field-level confidence calibration, stratified sampling of high-confidence outputs, and segment-level extraction quality measurement
+- [topic-5.6-preserve-information-provenance-and-handle-uncertainty-in-multi-source-synthesis.md](topic-5.6-preserve-information-provenance-and-handle-uncertainty-in-multi-source-synthesis.md) - Claim-source mapping, conflict annotation, temporal source metadata, and uncertainty-preserving synthesis
 
 ## How To Use This Folder
 
@@ -44,4 +46,4 @@ The current note set covers Domain 1 in full, the first five Domain 2 tool-integ
 
 ## What Comes Next
 
-The current material is strongest on Domain 1, covers the early part of Domain 2 through Topic 2.5, extends Domain 3 through Topic 3.6, carries Domain 4 through Topic 4.6, and now extends Domain 5 through Topic 5.4. Future notes can extend the same format through the rest of Domain 5 while keeping the exam guide and topic index aligned.
+The current material is strongest on Domain 1, covers the early part of Domain 2 through Topic 2.5, extends Domain 3 through Topic 3.6, carries Domain 4 through Topic 4.6, and covers Domain 5 in full. Future notes can extend the same format through any remaining outline topics while keeping the exam guide and topic index aligned.
